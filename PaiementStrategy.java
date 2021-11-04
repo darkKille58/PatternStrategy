@@ -1,4 +1,4 @@
 public interface PaiementStrategy
 {
-    public void payer(int montant)
+    public void payer(int montant);
 }
