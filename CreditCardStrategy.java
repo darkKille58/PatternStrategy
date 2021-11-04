@@ -10,9 +10,9 @@ public class CreditCardStrategy implements PaiementStrategy
     }
 
     @Override 
-    public void payer(int montant)
+    public void payer(int montant, int frais)
     {
-        System.out.println("Vous allez payer " + montant + "CFA par carte de credit");
+        System.out.println("Vous allez payer " + montant + "CFA par carte de credit" + " dont " + frais + " de frais");
     }
 
 //test 
@@ -21,6 +21,6 @@ public class CreditCardStrategy implements PaiementStrategy
         String numeroCarte = "1234";
         String date = "4-11-2021";
         CreditCardStrategy paiement1 = new CreditCardStrategy(numeroCarte,date);
-        paiement1.payer(150000);
+        paiement1.payer(150000, 200);
     }
 }
