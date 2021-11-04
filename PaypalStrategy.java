@@ -10,7 +10,7 @@ public class PaypalStrategy implements PaiementStrategy{
 
 	@Override
 	public void payer(int montant,int frais) {
-		System.out.println(montant + "CFA payés par Paypal.");
+		System.out.println("Vous allez payer " + montant + "CFA par carte de credit" + " dont " + frais + " de frais");
 	}
 
 

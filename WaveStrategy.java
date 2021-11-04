@@ -7,7 +7,7 @@ public class WaveStrategy implements PaiementStrategy {
     }
     @Override
     public void payer(int montant, int frais){
-        System.out.println( montant + frais + "CFA  payes par wave. ");
+        System.out.println("Vous allez payer " + montant + "CFA par carte de credit" + " dont " + frais + " de frais");
     }
 
 //test 
